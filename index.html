@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meet - Developer Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #000021;
+            color: white;
+        }
+
+
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #12123e;
+            flex-wrap: wrap;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: #9999e2;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+
+
+        .firstSection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 8%;
+            flex-wrap: wrap;
+        }
+
+        .leftSection {
+            flex: 1;
+            min-width: 280px;
+            font-size: 2.3rem;
+        }
+
+        .rightSection {
+            flex: 1;
+            text-align: center;
+            min-width: 280px;
+        }
+
+        .rightSection img {
+            width: 80%;
+            max-width: 350px;
+        }
+
+        .purple {
+            color: #aa6be4;
+        }
+
+        #element {
+            color: #aa6be4;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 12px 18px;
+            background: #1e2167;
+            border: 2px solid white;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background: #2c2f8f;
+        }
+
+
+
+        .secondSection {
+            padding: 60px 8%;
+        }
+
+        .secondSection h1 {
+            margin-top: 10px;
+        }
+
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .vertical {
+            width: 220px;
+        }
+
+        .image-top {
+            width: 30px;
+            margin-bottom: 10px;
+        }
+
+        .vertical-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .vertical-desc {
+            font-size: 14px;
+            color: gray;
+        }
+
+
+
+        footer {
+            background: #0e0e1a;
+            margin-top: 60px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 40px 8%;
+            gap: 30px;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 15px;
+        }
+
+
+
+        @media(max-width:768px) {
+
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .firstSection {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .leftSection {
+                font-size: 1.8rem;
+            }
+
+            .rightSection img {
+                width: 70%;
+            }
+
+            .box {
+                justify-content: center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">Meet's Portfolio</div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="firstSection">
+
+        <div class="leftSection">
+            Hi, My name is <span class="purple">Meet</span>
+            <div>I am a</div>
+            <span id="element"></span>
+
+            <div class="buttons">
+                <button class="btn">Download Resume</button>
+                <button class="btn">Visit Github</button>
+            </div>
+        </div>
+
+        <div class="rightSection">
+            <img src="bg.png" alt="developer">
+        </div>
+
+    </section>
+
+
+
+    <section class="secondSection">
+
+        <span style="color:gray;">What I have done so far</span>
+        <h1>Work Experience</h1>
+
+        <div class="box">
+
+            <div class="vertical">
+                <img class="image-top" src="developer.png">
+                <div class="vertical-title">HTML Developer</div>
+                <div class="vertical-desc">Built responsive websites.</div>
+            </div>
+
+            <div class="vertical">
+                <img class="image-top" src="facebook.png">
+                <div class="vertical-title">Node.js Developer</div>
+                <div class="vertical-desc">Backend API development.</div>
+            </div>
+
+            <div class="vertical">
+                <img class="image-top" src="instagram.png">
+                <div class="vertical-title">Frontend Developer</div>
+                <div class="vertical-desc">UI/UX Design projects.</div>
+            </div>
+
+            <div class="vertical">
+                <img class="image-top" src="youtube.png">
+                <div class="vertical-title">Software Developer</div>
+                <div class="vertical-desc">Full stack development.</div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+
+        <div class="footer">
+
+            <div>
+                <h3>Meet's Developer Portfolio</h3>
+            </div>
+
+            <div>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li>Email</li>
+                    <li>LinkedIn</li>
+                    <li>Github</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-rights">
+            © 2026 meetsportfolio.com | All rights reserved
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+
+    <script>
+        new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer', 'Graphic Designer', 'Video Editor'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+    </script>
+
+</body>
+
+</html>
